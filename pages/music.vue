@@ -101,7 +101,7 @@ const handleCopySongUrl = async (song) => {
             <a href="/">
                 <img class="w-[40px] h-[40px] sm:w-[40px] sm:h-[40px]" src="@/assets/my-logo.png" alt="logo">
             </a>
-            <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white ">爱盼-音乐搜索下载</h1>
+            <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white ">音乐搜索下载</h1>
         </div>
 
         <div class="flex flex-row items-center justify-center gap-2 mt-5">
@@ -118,7 +118,7 @@ const handleCopySongUrl = async (song) => {
                     <button class="text-gray-950 text-sm hover:underline" @click="handleNextPage()">下一页</button>
                 </div>
             </div>
-            <div class="text-purple-500" v-if="searchLoading">爱盼，正在努力搜索中...</div>
+            <div class="text-purple-500" v-if="searchLoading">正在努力搜索中...</div>
             <ul class="space-y-2">
                 <li class="flex flex-row justify-between items-center text-sm p-2 bg-gray-100 "
                     v-for="(item, index) in kwData" :key="index">
@@ -133,7 +133,7 @@ const handleCopySongUrl = async (song) => {
                 </li>
             </ul>
         </div>
-        <p class="mt-4 text-xs text-red-500 text-center">仅供个人学习使用，禁止商业用途，否则后果自负</p>
+        <p class="mt-4 text-xs text-red-500 text-center">仅供个人学习使用</p>
 
         <div v-if="downloadVisible"
             class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center">
@@ -156,7 +156,7 @@ const handleCopySongUrl = async (song) => {
                 <div class="space-x-2 text-center">
                     <button class="bg-gray-900 text-white px-2 py-1 rounded-md text-xs hover:text-md"
                         @click="handleCopySongName(currentDownloadSong)">复制歌曲名字</button>
-                        <!-- 因为https协议不能直接下载http协议的歌曲，所以暂时不开放 -->
+                    <!-- 因为https协议不能直接下载http协议的歌曲，所以暂时不开放 -->
                     <!-- <button class="bg-gray-900 text-white px-2 py-1 rounded-md text-xs hover:text-md"
                         @click="handleDownload(currentDownloadSong)">下载</button> -->
                     <button class="bg-gray-900 text-white px-2 py-1 rounded-md text-xs hover:text-md"

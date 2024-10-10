@@ -28,6 +28,13 @@ const colorMode = useColorMode()
                     <img v-if="colorMode.preference === 'dark'" class="w-[20px] h-[20px]"
                         src="@/assets/theme/music-light.svg" alt="">
                 </nuxt-link>
+
+                <nuxt-link class="text-sm text-slate-600 font-bold dark:text-white" href="/donate" title="打赏">
+                    <img v-if="colorMode.preference === 'light'" class="w-[20px] h-[20px]"
+                        src="@/assets/donation/dashang.svg" alt="">
+                    <img v-if="colorMode.preference === 'dark'" class="w-[20px] h-[20px]"
+                        src="@/assets/donation/dashang.svg" alt="">
+                </nuxt-link>
             </div>
         </div>
     </div>
