@@ -63,7 +63,7 @@ onMounted(async () => {
 <template>
     <div class="bg-white dark:bg-gray-800">
         <div class=" text-xs bg-slate-100 dark:bg-gray-700 p-3 text-gray-600 text-center sm:text-sm dark:text-white">
-            这里是精彩的博客天地，时常发布一些妙趣横生的内容。欢迎各位朋友拨冗光临，一同感受这里的独特魅力。
+            欢迎推荐有趣的内容
         </div>
         <div class="grid grid-cols-5 max-w-[1240px] mx-auto">
             <div class="col-span-3 border-r border-slate-100 py-5 pr-5 min-h-screen">
