@@ -175,7 +175,7 @@ onBeforeUnmount(() => {
                     </div>
                     <div class="col-span-4">
                         <div class="text-center text-white text-sm font-semibold">
-                            <nuxt-link to="/">AIPAN</nuxt-link>
+                            <nuxt-link to="/">TV</nuxt-link>
                         </div>
                     </div>
                     <div class="col-span-4 flex justify-end">
